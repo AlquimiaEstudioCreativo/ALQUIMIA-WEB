@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nexus - Redes Sociales | Estudio Creativo</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <div class="particles"></div>
+
+  <header>
+    <div class="logo">
+      <img src="alquimialogolargo.png" alt="ALQUIMIA Logo" />
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="aurum.html" class="uppercase">AURUM</a>
+      <a href="impressio.html" class="uppercase">IMPRESSIO</a>
+      <a href="nexus.html" class="uppercase">NEXUS</a>
+      <a href="lumen.html" class="uppercase">LUMEN</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Nexus</h2>
+    <p>Conectamos tu marca con el mundo a través de estrategias que inspiran.
+      Gestionamos tus redes con creatividad y propósito, aumentando tu alcance, tu presencia y el vínculo con tu comunidad.
+      Cada publicación es pensada para reflejar tu esencia, despertar emociones y crear conexiones genuinas.
+      Tu universo digital, cuidado con alma y estrategia.</p>
+
+    <h3>Servicios de Gestión de Redes Sociales</h3>
+    <table class="tabla-negra">
+      <thead>
+        <tr>
+          <th>Servicio</th>
+          <th>Descripción</th>
+          <th>Precio Aproximado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gestión Básica</td>
+          <td>Gestión de 1 red social, 8 publicaciones mensuales</td>
+          <td>$4,000 MXN</td>
+        </tr>
+        <tr>
+          <td>Gestión Intermedia</td>
+          <td>Gestión de 2 redes sociales, 16 publicaciones mensuales</td>
+          <td>$7,000 MXN</td>
+        </tr>
+        <tr>
+          <td>Gestión Premium</td>
+          <td>Gestión completa + campañas publicitarias</td>
+          <td>$12,000 MXN</td>
+        </tr>
+        <tr>
+          <td>Atención y Respuesta</td>
+          <td>Gestión de mensajes y comentarios en redes sociales</td>
+          <td>$1,800 MXN</td>
+        </tr>
+        <tr>
+          <td>Diseño de Contenido</td>
+          <td>Creación de imágenes y videos para publicaciones</td>
+          <td>$3,000 MXN</td>
+        </tr>
+        <tr>
+          <td>Escucha Social</td>
+          <td>Monitorización de tendencias y sentimiento de marca</td>
+          <td>$2,500 MXN</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Nuestro trabajo</h3>
+    <section class="galeria-trabajos">
+      <figure>
+        <img src="imagenes/trabajo1.jpg" alt="Proyecto 1" />
+        <figcaption>Proyecto Creativo 1</figcaption>
+      </figure>
+      <figure>
+        <img src="imagenes/trabajo2.jpg" alt="Proyecto 2" />
+        <figcaption>Proyecto Creativo 2</figcaption>
+      </figure>
+      <figure>
+        <img src="imagenes/trabajo3.jpg" alt="Proyecto 3" />
+        <figcaption>Proyecto Creativo 3</figcaption>
+      </figure>
+      <figure>
+        <img src="imagenes/trabajo4.jpg" alt="Proyecto 4" />
+        <figcaption>Proyecto Creativo 4</figcaption>
+      </figure>
+      <figure>
+        <img src="imagenes/trabajo5.jpg" alt="Proyecto 5" />
+        <figcaption>Proyecto Creativo 5</figcaption>
+      </figure>
+      <figure>
+        <img src="imagenes/trabajo6.jpg" alt="Proyecto 6" />
+        <figcaption>Proyecto Creativo 6</figcaption>
+      </figure>
+    </section>
+
+    <h3>Contacto</h3>
+    <form action="https://formsubmit.co/alquimiaimprenta@gmail.com" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false" />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </main>
+
+  <footer>
+    <p>Contacto: alquimiaimprenta@gmail.com | Tel: 729 146 9934 / 722 261 7384</p>
+    <p>
+      Síguenos en redes sociales: 
+      <a href="https://www.facebook.com/AlquimiaEstudioCreativo9/" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+      <a href="https://www.instagram.com/alquimiaimprenta" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+      <a href="https://wa.me/527291469934" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const particlesContainer = document.querySelector('.particles');
+      const particleCount = 60;
+
+      for (let i = 0; i < particleCount; i++) {
+        const span = document.createElement('span');
+
+        span.style.left = `${Math.random() * 100}%`;
+
+        const size = 6 + Math.random() * 8;
+        span.style.width = `${size}px`;
+        span.style.height = `${size}px`;
+
+        const duration = 12 + Math.random() * 6;
+        span.style.animationDuration = `${duration}s`;
+
+        span.style.animationDelay = `${Math.random() * duration}s`;
+
+        particlesContainer.appendChild(span);
+      }
+    });
+  </script>
+
+</body>
+</html>
